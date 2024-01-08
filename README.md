@@ -8,5 +8,5 @@ Step 2 - Download this project on your machine and open this project in any Code
 Step 3 - Then open new terminal and type the following command to start the json-server to fetch the data from json file:
          **json-server -w data/db.json -p 4000**
 
-Step 4 - Then run the following command to set up local react server:
+Step 4 - Then run the following command in new terminal to set up local react server:
          **npm start**
