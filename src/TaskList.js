@@ -14,7 +14,7 @@ const TaskList = ({tasks, title}) => {
                         <Container>
                             <Row>
                                 <Col>
-                                    <h2> <span style={{color:'crimson'}}>{task.taskId}</span></h2> 
+                                    <h2> <span style={{color:'crimson'}}>{task.taskKey}</span></h2> 
                                 </Col>
                                 <Col xs={8}>
                                     <h2>{task.task}</h2>
@@ -34,7 +34,7 @@ const TaskList = ({tasks, title}) => {
                         <Container>
                             <Row>
                                 <Col>
-                                    <h2> <span style={{color:'orange'}}>{task.taskId}</span></h2> 
+                                    <h2> <span style={{color:'orange'}}>{task.taskKey}</span></h2> 
                                 </Col>
                                 <Col xs={8}>
                                     <h2>{task.task}</h2>
@@ -54,7 +54,7 @@ const TaskList = ({tasks, title}) => {
                         <Container fluid="md">
                             <Row>
                                 <Col>
-                                    <h2> <span style={{color:'steelblue'}}>{task.taskId}</span></h2> 
+                                    <h2> <span style={{color:'steelblue'}}>{task.taskKey}</span></h2> 
                                 </Col>
                                 <Col xs={8}>
                                     <h2>{task.task}</h2>
@@ -74,7 +74,7 @@ const TaskList = ({tasks, title}) => {
                         <Container fluid="md">
                             <Row>
                                 <Col>
-                                    <h2> <span style={{color:'green'}}>{task.taskId}</span></h2> 
+                                    <h2> <span style={{color:'green'}}>{task.taskKey}</span></h2> 
                                 </Col>
                                 <Col xs={8}>
                                     <h2>{task.task}</h2>

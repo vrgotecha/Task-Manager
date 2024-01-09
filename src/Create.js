@@ -4,9 +4,9 @@ import { useHistory } from "react-router-dom";
 import { MdAddTask } from "react-icons/md";
 
 const Create = () => {
-    const [taskId, setTaskId] = useState('');
+    const [taskKey, settaskKey] = useState('');
     const [task, setTask] = useState('');
-    const [assignedTo, setAssignedTo] = useState('');
+    const [assignedTo, setAssignedTo] = useState('Vivek');
     const [taskStatus, setTaskStatus] = useState('TO DO');
     const [isPending, setIsPending] = useState(false);
     //const [team, setTeam] = useState('');
@@ -15,7 +15,7 @@ const Create = () => {
     
     const handleSubmit = (e) => {
         e.preventDefault();
-        const taskDetails = {taskId, task, taskStatus, assignedTo};
+        const taskDetails = {taskKey, task, taskStatus, assignedTo};
 
         setIsPending(true);
 
@@ -37,8 +37,8 @@ const Create = () => {
                 <label ><b>Task Id:</b></label>
                 <input 
                 type="text"
-                value = {taskId}
-                onChange = {(e) => {setTaskId(e.target.value)}}
+                value = {taskKey}
+                onChange = {(e) => {settaskKey(e.target.value)}}
                 required 
                 />
 

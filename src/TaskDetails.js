@@ -15,17 +15,19 @@ const TaskDetails = () => {
   const history = useHistory();
 
   const handleDelete = () => {
-    fetch("http://localhost:4000/tasks/" + task.id, {
-      method: "PUT",
+    console.log("The record that will be deleted is ", id);
+    fetch("http://localhost:4000/tasks/" + id, {
+      method: "DELETE",
+      headers : {"Content-Type" : "application/json"},
     }).then(() => {
       history.push("/");
     });
   };
   const setData = (data) => {
     console.log(data);
-    let {id, taskId, task, taskStatus, assignedTo} = data
+    let {id, taskKey, task, taskStatus, assignedTo} = data
     localStorage.setItem('id', id);
-    localStorage.setItem('taskId', taskId);
+    localStorage.setItem('taskKey', taskKey);
     localStorage.setItem('task', task);
     localStorage.setItem('assignedTo', assignedTo);
     localStorage.setItem('taskStatus', taskStatus)
@@ -55,7 +57,7 @@ const TaskDetails = () => {
             <hr></hr>
             <Row>
               <Col>
-                <span>{task.taskId}</span>
+                <span>{task.taskKey}</span>
               </Col>
               <Col xs={7}>
                 <span>{task.task}</span>

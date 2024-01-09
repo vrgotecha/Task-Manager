@@ -4,7 +4,7 @@ import { GrDocumentUpdate } from "react-icons/gr";
 
 const Update = () => {
     const [idStr, setIdStr] = useState(null);
-    const [taskId, setTaskId] = useState('');
+    const [taskKey, settaskKey] = useState('');
     const [task, setTask] = useState('');
     const [assignedTo, setAssignedTo] = useState('');
     const [taskStatus, setTaskStatus] = useState('');
@@ -13,7 +13,7 @@ const Update = () => {
 
     useEffect(() => {
         setIdStr(localStorage.getItem('id'));
-        setTaskId(localStorage.getItem('taskId'))
+        settaskKey(localStorage.getItem('taskKey'))
         setTask(localStorage.getItem('task'));
         setAssignedTo(localStorage.getItem('assignedTo'));
         setTaskStatus(localStorage.getItem('taskStatus'))
@@ -22,7 +22,7 @@ const Update = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         const id = parseInt(idStr)
-        const taskDetails = {taskId, task, taskStatus, assignedTo, id};
+        const taskDetails = {taskKey, task, taskStatus, assignedTo, id};
 
         setIsPending(true);
 
@@ -44,8 +44,8 @@ const Update = () => {
                 <label ><b>Task Id:</b></label>
                 <input 
                 type="text"
-                value = {taskId}
-                onChange = {(e) => {setTaskId(e.target.value)}}
+                value = {taskKey}
+                onChange = {(e) => {settaskKey(e.target.value)}}
                 required 
                 />
 

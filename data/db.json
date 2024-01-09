@@ -1,55 +1,59 @@
 {
   "tasks": [
     {
-      "taskId": "eComm_04",
+      "taskKey": "eComm_04",
       "task": "Change Phone number field label to Phone",
       "taskStatus": "TO DO",
       "assignedTo": "Rakesh",
       "id": 4
     },
     {
-      "taskId": "eComm_05",
+      "taskKey": "eComm_05",
       "task": "Integrate with paypal",
       "taskStatus": "TO DO",
       "assignedTo": "Vivek",
       "id": 5
     },
     {
-      "taskId": "eComm_03",
+      "taskKey": "eComm_03",
       "task": "Shopping cart purchasing error fix needed",
-      "taskStatus": "IN PROGRESS",
+      "taskStatus": "DONE",
       "assignedTo": "Sachin",
       "id": 3
     },
     {
-      "taskId": "eComm_02",
+      "taskKey": "eComm_02",
       "task": "Name field should allow max 50 characters",
       "taskStatus": "IN REVIEW",
       "assignedTo": "Mayur",
       "id": 2
     },
     {
-      "taskId": "eComm_01",
+      "taskKey": "eComm_01",
       "task": "Show the status values in different colors",
       "taskStatus": "DONE",
       "assignedTo": "Mayank",
       "id": 1
     },
     {
-      "taskId": "eComm_06",
+      "taskKey": "eComm_06",
       "task": "Accessibility guidelines needs to be implemented!!!",
       "taskStatus": "TO DO",
       "assignedTo": "Vivek",
       "id": 6
     },
     {
-      "taskId": "eComm_07",
-      "task": "Payment processing is taking longer time",
+      "taskKey": "eComm_07",
+      "task": "Payment processing is taking longer time than expectations",
       "taskStatus": "IN PROGRESS",
-      "assignedTo": "Mayank",
+      "assignedTo": "Vivek",
       "id": 7
     },
     {
+      "taskKey": "eComm_09",
+      "task": "Color scheme needs to match with Accessibilty guidelines",
+      "taskStatus": "IN PROGRESS",
+      "assignedTo": "Vivek",
       "id": 8
     }
   ],
@@ -65,6 +69,9 @@
     },
     {
       "member": "Mayur"
+    },
+    {
+      "member": "Mayank"
     }
   ]
 }
