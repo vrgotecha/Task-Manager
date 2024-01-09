@@ -48,6 +48,7 @@
       "taskStatus": "IN PROGRESS",
       "assignedTo": "Vivek",
       "id": 7
+<<<<<<< HEAD
     },
     {
       "taskKey": "eComm_09",
@@ -55,6 +56,8 @@
       "taskStatus": "IN PROGRESS",
       "assignedTo": "Vivek",
       "id": 8
+=======
+>>>>>>> 7c1b628a76547e1191b3971748b724111f92301d
     }
   ],
   "team": [
